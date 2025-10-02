@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 const services = [
   {
     title: "WINDOW TINTING",
-    desc: `Up to a 60% heat reduction can be achieved compared to untreated glass. Window films will help keep your vehicle cooler, even after hours of sitting in the blazing sun by reflecting the heat away from your vehicle.`,
-    image: "/image.png",
+    desc: `Any mechanical & electrical work.`,
+    image: "/imag.png",
     path: "/services/mechanical",
   },
 ];
@@ -105,7 +105,7 @@ const ServiceSection = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-70 object-cover"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
                     e.currentTarget.src = "/logo.avif"; // fallback logo
